@@ -24,7 +24,7 @@ public class ProdutoController implements ProdutoRepository{
 	@Override
 	public void cadastrar(Produto produto) {
 		listaProdutos.add(produto);
-		System.out.println("\n🎉 Produto Cadastrado com sucesso!");
+		System.out.println("\nProduto Cadastrado com sucesso!");
 	}
 
 	@Override
