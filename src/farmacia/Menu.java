@@ -138,7 +138,7 @@ public class Menu {
 		System.out.print("Digite o Categoria do produto (1 - Medicamento | 2 - Cosmético): ");
 		int categoria = leia.nextInt();
 
-		System.out.print("Digite o Preco do produto: ");
+		System.out.print("Digite o Preço do produto: ");
 		float preco = leia.nextFloat();
 
 		switch (categoria) {
@@ -179,7 +179,7 @@ public class Menu {
 
 		if (produto != null) {
 
-			System.out.print("\nTem certeza que deseja excluir esta produto? (S/N): ");
+			System.out.print("\nTem certeza que deseja excluir o produto? (S/N): ");
 			String confirmacao = leia.nextLine();
 
 			if (confirmacao.equalsIgnoreCase("S")) {
@@ -189,7 +189,7 @@ public class Menu {
 			}
 
 		} else {
-			System.out.printf("\nA produto número %d não foi encontrada!", id);
+			System.out.printf("\nO produto Id %d não foi encontrado!", id);
 		}
 	}
 
@@ -212,7 +212,7 @@ public class Menu {
 			String entrada = leia.nextLine();
 			nome = entrada.isEmpty() ? nome : entrada;
 
-			System.out.printf("Preco atual: %.2f\nDigite o novo Preco (Pressione ENTER para manter o valor atual): ",
+			System.out.printf("Preço atual: %.2f\nDigite o novo Preço (Pressione ENTER para manter o valor atual): ",
 					preco);
 			entrada = leia.nextLine();
 			preco = entrada.isEmpty() ? preco : Float.parseFloat(entrada.replace(",", "."));
@@ -244,7 +244,7 @@ public class Menu {
 			}
 
 		} else {
-			System.out.printf("\nA produto número %d não foi encontrada!", id);
+			System.out.printf("\nA produto número %d não foi encontrado!", id);
 		}
 	}
 
