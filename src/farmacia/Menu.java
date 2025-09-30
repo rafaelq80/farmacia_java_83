@@ -3,6 +3,8 @@ package farmacia;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import farmacia.model.Cosmetico;
+import farmacia.model.Medicamento;
 import farmacia.util.Cores;
 
 public class Menu {
@@ -13,6 +15,12 @@ public class Menu {
 	public static void main(String[] args) {
 
 		int opcao;
+		
+		Medicamento m1 = new Medicamento(1, "Paracetamol 750mg", 1, 20.00f, "Paracetamol");
+		m1.visualizar();
+		
+		Cosmetico c1 = new Cosmetico(1, "Sabonete Lux", 2, 4.00f, "Flores do Campo");
+		c1.visualizar();
 
 		// Laço de repetição que mantém o menu rodando até a opção sair ser acionada
 		while (true) {
